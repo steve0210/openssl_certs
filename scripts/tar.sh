@@ -1,9 +1,9 @@
 #!/bin/sh
 
-file=ca.tar.gz
 ldir=${1-ca}
+file=$ldir.tar.gz
 cdir=$(pwd)
-xdir=/mnt/c/Users/Steve/Documents
+xdir=/mnt/c/Users/Steve/Documents/root
 
 if [ ! -d "$ldir" ]
 then

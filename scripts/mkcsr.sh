@@ -1,4 +1,5 @@
 #!/bin/sh
+
 name=$1
 [ -n "$2" ] && encrypt="-aes256"
 
