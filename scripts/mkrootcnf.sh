@@ -89,7 +89,7 @@ localityName_default            = Austin
 0.organizationName_default      = Sonic Healthcare USA
 organizationalUnitName_default  = Dev
 emailAddress_default            = info@SonicHealthcareUSA.com
-commonName_default              = iMorpheus
+commonName_default              = IT Cert
 
 [ v3_ca ]
 # Extensions for a typical CA (`man x509v3_config`).

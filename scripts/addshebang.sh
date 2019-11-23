@@ -5,6 +5,6 @@ do
   then 
     echo "adding shebang to $f"
     sed -i '1i#!/bin/sh' $f
-    chmod +x $f
   fi
+  chmod +x $f
 done
