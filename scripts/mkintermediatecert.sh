@@ -1,7 +1,8 @@
 #!/bin/sh
-ca=intermediate
-csr=intermediate/csr/$ca.csr.pem
-cert=intermediate/certs/$ca.cert.pem
+
+int=intermediate
+csr=intermediate/csr/$int.csr.pem
+cert=intermediate/certs/$int.cert.pem
 
 echo "creating cert $cert"
 openssl ca -config openssl.cnf -extensions v3_intermediate_ca \

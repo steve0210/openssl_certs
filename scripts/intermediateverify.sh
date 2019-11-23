@@ -1,7 +1,8 @@
 #!/bin/sh
 
-ca=ca
-cert=intermediate/certs/intermediate.cert.pem
+ca=$(basename $(pwd))
+int=intermediate
+cert=intermediate/certs/$int.cert.pem
 root=certs/$ca.cert.pem
 
 openssl x509 -noout -text -in $cert

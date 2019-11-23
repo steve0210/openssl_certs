@@ -137,3 +137,5 @@ authorityKeyIdentifier = keyid,issuer
 keyUsage = critical, digitalSignature
 extendedKeyUsage = critical, OCSPSigning
 ENDMESSAGE
+
+sed -i "s#/ca.#/$(basename $(pwd)).#g" $file
