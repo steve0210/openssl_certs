@@ -11,3 +11,4 @@ fi
 ../scripts/mkcert.sh $name
 ../scripts/mkchain.sh $name
 ../scripts/verify.sh $name
+../scripts/cpoutserver.sh $name
