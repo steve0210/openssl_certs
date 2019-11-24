@@ -1,4 +1,5 @@
 #!/bin/sh
+
 name=$1
 encrypt=$2
 

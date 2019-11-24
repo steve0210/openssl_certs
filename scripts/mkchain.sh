@@ -12,6 +12,6 @@ icert=intermediate/certs/intermediate.cert.pem
 chain=$cert.chain
 
 echo "making chain $chain"
-cat $cert $icert > $chain
+cat $icert $cert > $chain
 mv -f $chain $cert
 chmod 444 $cert
