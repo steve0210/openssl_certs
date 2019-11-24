@@ -1,6 +1,7 @@
 #!/bin/sh
 
-server=$1
+int=${1-intermediate}
+server=$2
 ca=$(basename $(pwd))
 
 if [ -n "$server" ]; then
@@ -9,6 +10,6 @@ if [ -n "$server" ]; then
 else
   echo "creating root.crt, postgresql.crt, and postgresql.key"
   cp certs/$ca.cert.pem out/server/root.crt
-  cp intermediate/certs/intermediate.cert.pem out/client/postgresql.crt
-  cp intermediate/private/intermediate.key.pem out/client/postgresql.key
+  cp intermediate/certs/$int.cert.pem out/client/postgresql.crt
+  cp intermediate/private/$int.key.pem out/client/postgresql.key
 fi

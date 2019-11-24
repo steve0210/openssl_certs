@@ -1,4 +1,5 @@
 #!/bin/sh
+
 dir=${1-ca}
 
 echo "creating $dir ..."

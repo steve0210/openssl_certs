@@ -1,6 +1,6 @@
 #!/bin/sh
 
-int=intermediate
+int=${1-intermediate}
 csr=intermediate/csr/$int.csr.pem
 cert=intermediate/certs/$int.cert.pem
 

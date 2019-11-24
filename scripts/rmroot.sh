@@ -1,5 +1,6 @@
 #!/bin/sh
-dir=ca
+
+dir=${1-ca}
 
 echo "removing $dir ..."
 [ -d "$dir" ] && rm -rf $dir

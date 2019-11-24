@@ -1,4 +1,5 @@
 #!/bin/sh
+
 ca=$(basename $(pwd))
 key=private/$ca.key.pem
 cert=certs/$ca.cert.pem

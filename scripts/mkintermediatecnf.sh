@@ -1,4 +1,5 @@
 #!/bin/sh
+
 file=intermediate/openssl.cnf
 
 echo "creating $file ..."

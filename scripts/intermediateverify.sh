@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ca=$(basename $(pwd))
-int=intermediate
+int=${1-intermediate}
 cert=intermediate/certs/$int.cert.pem
 root=certs/$ca.cert.pem
 

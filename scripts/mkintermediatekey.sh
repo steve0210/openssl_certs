@@ -1,7 +1,7 @@
 #!/bin/sh
 
-[ -n "$1" ] && encrypt="-aes256"
-int=intermediate
+int=${1-intermediate}
+[ -n "$2" ] && encrypt="-aes256"
 key=intermediate/private/$int.key.pem
 csr=intermediate/csr/$int.csr.pem
 

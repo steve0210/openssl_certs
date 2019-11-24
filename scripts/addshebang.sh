@@ -1,4 +1,5 @@
 #!/bin/sh
+
 for f in ./scripts/*.sh
 do 
   if ! head -1 $f | grep -q /bin/sh
